@@ -11,13 +11,13 @@ class Centaur {
   shootBow() {
     while(this.layingDown === false) {
       if(actions.length < 2) {
-      actions.push("shot")
-      return "Twang!!!"
+      actions.push("shot");
+      return "Twang!!!";
     } else {
       this.cranky = true;
       return "NO!";
   }
-  }
+};
     return "NO!";
   }
   run() {
@@ -29,7 +29,7 @@ class Centaur {
       this.cranky = true;
       return "NO!";
     }
-  }
+  };
   return "NO!";
 
 }
@@ -42,7 +42,7 @@ sleep() {
   } else {
   return "NO!";
 }
-}
+};
 layDown() {
   this.standing = false;
   this.layingDown = true;
@@ -57,7 +57,7 @@ drinkPotion() {
 } else {
   return "Not while I'm laying down!";
 }
-}
-}
+};
+};
 
 module.exports = Centaur
